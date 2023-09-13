@@ -10,6 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Syne:wght@600;800&family=Work+Sans&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
     <title>SG Shop</title>
 </head>
 
@@ -53,11 +54,14 @@
                         <a href="">Bag (0)</a>
                     </div>
                 </div>
-                <img src="assets/hamburger menu.svg" alt="menu">
-                <div class="nav-items">
+                <button id="menuBtn" onclick="handleMenuClick()">
+                    <img src="assets/hamburger menu.svg" alt="menu" id="open-menu">
+                    <img src="assets/cross.svg" alt="close-menu" id="close-menu" class="hide">
+                </button>
+                <div class="nav-items hide" id="nav-items">
                     <a href="" class="nav-item">Home</a>
                     <a href="" class="nav-item">About</a>
-                    <div class="products">
+                    <div class="products nav-item">
                         <p>Our Products</p>
                         <ul>
                             <li>Product 1</li>

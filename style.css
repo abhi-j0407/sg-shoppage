@@ -147,8 +147,54 @@ body {
           }
         }
 
+        > button {
+          align-self: center;
+          background: none;
+          border: 1px solid var(--accent-white);
+          padding: 0;
+
+          > img {
+            &.hide {
+              display: none;
+            }
+          }
+        }
+
         .nav-items {
-          display: none;
+          color: var(--accent-white);
+          background: url(assets/hero-bg.png);
+          background-color: var(--accent-grey);
+          z-index: 2;
+          position: fixed;
+          left: 0;
+          top: 116px;
+          width: 100vw;
+          height: calc(100% - 116px);
+          overflow-x: hidden;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 46px;
+
+          &.hide {
+            display: none;
+          }
+
+          .nav-item {
+            font-family: 'Work Sans', sans-serif;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 400;
+            color: var(--accent-white);
+            text-decoration: none;
+          }
+
+          .products {
+            > ul {
+              display: none;
+            }
+          }
         }
       }
 
@@ -294,7 +340,7 @@ body {
       }
 
       > p {
-        font-family: 'Syne', sans-serif;
+        font-family: "Syne", sans-serif;
         font-size: 55px;
         font-weight: 800;
         line-height: 67.6%;
