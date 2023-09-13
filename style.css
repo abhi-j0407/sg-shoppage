@@ -229,6 +229,79 @@ body {
 
     .contact {
       background-image: url(assets/map.png);
+      padding: 50px 20px;
+
+      > div {
+        > div {
+          color: var(--accent-white);
+          opacity: 50%;
+          text-align: center;
+
+          > h3 {
+            font-family: "Syne", sans-serif;
+            font-size: 26px;
+            font-weight: 600;
+          }
+
+          > p {
+            font-family: "Work Sans", sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            max-width: 290px;
+            margin-inline: auto;
+          }
+        }
+
+        > form {
+          position: relative;
+
+          > input {
+            background: transparent;
+            border: none;
+            width: 100%;
+            border-bottom: 1px solid var(--accent-white);
+            padding: 0 10px 8px;
+            margin-top: 27px;
+            color: var(--accent-white);
+
+            &::placeholder {
+              font-size: 18px;
+              font-weight: 400;
+              text-transform: uppercase;
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
+
+          > button {
+            background: transparent;
+            color: var(--accent-orange);
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 66%;
+            border: 1.2px solid var(--accent-orange);
+            height: 100px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            bottom: -163px;
+          }
+        }
+      }
+
+      > p {
+        font-family: 'Syne', sans-serif;
+        font-size: 55px;
+        font-weight: 800;
+        line-height: 67.6%;
+        text-transform: uppercase;
+        color: var(--accent-white);
+        margin-top: 77px;
+      }
     }
 
     > footer {
