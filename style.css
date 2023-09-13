@@ -108,6 +108,7 @@ body {
           display: flex;
           margin-block: auto;
           gap: 12px;
+          align-items: center;
 
           > p {
             display: none;
@@ -122,8 +123,6 @@ body {
       background: url(assets/hero-bg.png);
       background-color: var(--accent-grey);
       min-height: 682px;
-      /* opacity: 0.5;
-      mix-blend-mode: overlay; */
       position: relative;
       overflow: hidden;
 
@@ -159,74 +158,88 @@ body {
         bottom: 0;
 
         .text {
-            font-family: 'Syne', sans-serif;
-            font-size: 55px;
-            font-weight: 800;
-            line-height: 125%;
-            color: var(--accent-white);
-            margin-bottom: 30px;
+          font-family: "Syne", sans-serif;
+          font-size: 55px;
+          font-weight: 800;
+          line-height: 125%;
+          color: var(--accent-white);
+          margin-bottom: 30px;
 
-            > p:nth-child(1) {
-                margin-left: 5%;
-            }
+          > p:nth-child(1) {
+            margin-left: 5%;
+          }
 
-            > p:nth-child(2) {
-                color: transparent;
-                -webkit-text-stroke: 1px #fff;
-                margin-left: 21%;
-            }
+          > p:nth-child(2) {
+            color: transparent;
+            -webkit-text-stroke: 1px #fff;
+            margin-left: 21%;
+          }
 
-            > p:nth-child(3) {
-                margin-left: 12%;
-            }
+          > p:nth-child(3) {
+            margin-left: 12%;
+          }
         }
 
         .see-more {
-            border-top: 1px solid var(--accent-white);
-            width: 45%;
-            padding: 50px 20px 40px;
-            position: relative;
+          border-top: 1px solid var(--accent-white);
+          width: 45%;
+          padding: 50px 20px 40px;
+          position: relative;
 
-            > img {
-                position: absolute;
-                top: -46px;
-                right: -32px;
-            }
+          > img {
+            position: absolute;
+            top: -46px;
+            right: -32px;
+          }
 
-            .btn {
-                display: flex;
-                align-items: center;
-                gap: 8px;
-                padding: 0;
-                background: transparent;
-                color: var(--accent-white);
-                border: 1px solid var(--accent-white);
-            }
+          .btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0;
+            background: transparent;
+            color: var(--accent-white);
+            border: 1px solid var(--accent-white);
+          }
         }
       }
 
       .img {
-
         .orange-bg {
-            height: 300px;
-            background-color: var(--accent-orange);
-            width: 100%;
-            position: absolute;
-            bottom: 80px;
-
-            > img {
-                position: absolute;
-                right: -140px;
-                top: -200px;
-            }
-          }
+          height: 300px;
+          background-color: var(--accent-orange);
+          width: 100%;
+          position: absolute;
+          bottom: 80px;
 
           > img {
             position: absolute;
-            bottom: 0;
-            right: -70px;
+            right: -140px;
+            top: -200px;
           }
+        }
+
+        > img {
+          position: absolute;
+          bottom: 0;
+          right: -70px;
+        }
       }
+    }
+
+    .contact {
+      background-image: url(assets/map.png);
+    }
+
+    > footer {
+      background-color: var(--accent-black);
+      color: var(--accent-white);
+      font-family: "Poppins", sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      display: grid;
+      place-items: center;
+      padding-block: 15px;
     }
   }
 }
