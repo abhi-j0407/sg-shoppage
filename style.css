@@ -182,7 +182,7 @@ body {
           }
 
           .nav-item {
-            font-family: 'Work Sans', sans-serif;
+            font-family: "Work Sans", sans-serif;
             text-transform: uppercase;
             font-size: 18px;
             font-weight: 400;
@@ -190,7 +190,7 @@ body {
             text-decoration: none;
           }
 
-          .products {
+          .products-nav {
             > ul {
               display: none;
             }
@@ -270,6 +270,91 @@ body {
           position: absolute;
           bottom: 0;
           right: -70px;
+        }
+      }
+    }
+
+    .products {
+      padding-block: 45px;
+      overflow-x: hidden;
+
+      > h3 {
+        font-family: "Syne", sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 125%;
+        color: var(--accent-black);
+        border-bottom: 1px solid var(--accent-black);
+        margin-left: 20px;
+        padding-bottom: 4px;
+        position: relative;
+
+        &::after {
+          content: url(assets/Star\ 2.svg);
+          position: absolute;
+          bottom: -23px;
+          left: -15px;
+        }
+      }
+
+      .filters {
+        display: flex;
+        list-style-type: none;
+        gap: 20px;
+        justify-content: space-between;
+        font-size: 14px;
+        align-items: center;
+        margin-top: 15px;
+        margin-inline: 15px;
+
+        > p.active {
+          font-family: "Syne", sans-serif;
+          font-size: 18px;
+          font-weight: 600;
+        }
+      }
+
+      .cards {
+        display: flex;
+        overflow-x: scroll;
+        width: fit-content;
+        margin-top: 38px;
+
+        .card {
+          margin-left: 20px;
+          width: 312px;
+
+          .img {
+            width: fit-content;
+            position: relative;
+
+            .openBtn {
+              position: absolute;
+              bottom: 0;
+              right: 0;
+            }
+          }
+
+          .content {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding-left: 8px;
+            margin-top: 12px;
+
+            > h4, .price {
+              font-family: "Syne", sans-serif;
+              font-size: 26px;
+              font-weight: 600;
+              text-transform: uppercase;
+            }
+            .desc {
+              font-size: 14px;
+              color: var(--accent-grey);
+              opacity: 0.5;
+              line-height: normal;
+            }
+          }
         }
       }
     }
@@ -365,6 +450,10 @@ body {
 }
 
 @keyframes spin {
-  form {transform: rotate(0deg);}
-  to { transform: rotate(360deg);}
+  form {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

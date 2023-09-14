@@ -10,7 +10,9 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Syne:wght@600;800&family=Work+Sans&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="index.js" defer></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
     <title>SG Shop</title>
 </head>
 
@@ -61,7 +63,7 @@
                 <div class="nav-items hide" id="nav-items">
                     <a href="" class="nav-item">Home</a>
                     <a href="" class="nav-item">About</a>
-                    <div class="products nav-item">
+                    <div class="products-nav nav-item">
                         <p>Our Products</p>
                         <ul>
                             <li>Product 1</li>
@@ -96,13 +98,59 @@
         </section>
         <section class="products">
             <h3>New Products</h3>
-            <ul class="filters">
-                <li>Apparel</li>
-                <li>Accessories</li>
-                <li>Best sellers</li>
-                <li>50% off</li>
-            </ul>
+            <div class="filters" id="filters">
+                <p onclick="changeFilter(event)">Apparel</p>
+                <p class="active" onclick="changeFilter(event)">Accessories</p>
+                <p onclick="changeFilter(event)">Best sellers</p>
+                <p onclick="changeFilter(event)">50% off</p>
+            </div>
             <!-- Add products array here -->
+            <div class="cards">
+                <div class="card">
+                    <div class="img">
+                        <img src="assets/philipp-arlt-8EyB_RvaWtY-unsplash.png" alt="product">
+                        <img src="assets/Secondary button.svg" alt="open" class="openBtn">
+                    </div>
+                    <div class="content">
+                        <h4>Florida Jacket</h4>
+                        <p class="desc">Suffered alteration in some form, bysuffalterattion in some forme, byinjected humor, or randomised</p>
+                        <p class="price">$100</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="assets/philipp-arlt-8EyB_RvaWtY-unsplash.png" alt="product">
+                        <img src="assets/Secondary button.svg" alt="open" class="openBtn">
+                    </div>
+                    <div class="content">
+                        <h4>Florida Jacket</h4>
+                        <p class="desc">Suffered alteration in some form, bysuffalterattion in some forme, byinjected humor, or randomised</p>
+                        <p class="price">$100</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="assets/philipp-arlt-8EyB_RvaWtY-unsplash.png" alt="product">
+                        <img src="assets/Secondary button.svg" alt="open" class="openBtn">
+                    </div>
+                    <div class="content">
+                        <h4>Florida Jacket</h4>
+                        <p class="desc">Suffered alteration in some form, bysuffalterattion in some forme, byinjected humor, or randomised</p>
+                        <p class="price">$100</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="assets/philipp-arlt-8EyB_RvaWtY-unsplash.png" alt="product">
+                        <img src="assets/Secondary button.svg" alt="open" class="openBtn">
+                    </div>
+                    <div class="content">
+                        <h4>Florida Jacket</h4>
+                        <p class="desc">Suffered alteration in some form, bysuffalterattion in some forme, byinjected humor, or randomised</p>
+                        <p class="price">$100</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="contact">
             <div>
